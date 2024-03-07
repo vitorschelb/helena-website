@@ -1,26 +1,49 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from 'next'
+import { Italianno, Prata, Dosis } from 'next/font/google'
+import './globals.css'
+import Header from '../components/Header'
 
-const inter = Inter({ subsets: ['latin'] });
+const italianno = Italianno({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-italianno',
+  display: 'swap',
+})
+
+const prata = Prata({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-prata',
+  display: 'swap',
+})
+
+const dosis = Dosis({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-dosis',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Helena WebSite',
-  description: 'Historiadora'
-};
+  description: 'Historiadora',
+}
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
-        <main className="flex min-h-screen flex-col items-center bg-base-300">
+      <body
+        className={` ${italianno.variable} ${prata.variable} ${dosis.variable}`}
+      >
+        <Header />
+        <main className=" flex-col h-svh items-center border-r-3 border-b-3 border-l-3 border-darkSand">
           {children}
         </main>
       </body>
     </html>
-  );
+  )
 }
