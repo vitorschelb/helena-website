@@ -72,3 +72,18 @@ export const animateAxisYSlow = {
     },
   },
 }
+
+export const animateAxisYFast = {
+  initial: {
+    opacity: 0,
+    y: 75,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5,
+      duration: 1,
+    },
+  },
+}
