@@ -12,6 +12,8 @@ import {
   animateAxisYSlow,
 } from '../utils/animations'
 import { CarouselSolutions } from '@/components/SolutionsCarousel'
+import BlogCard from '@/components/BlogCard'
+import { BlogCarousel } from '@/components/BlogCarousel'
 
 export default function HeroSection() {
   return (
@@ -96,7 +98,7 @@ export default function HeroSection() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="flex h-full w-1/2 flex-col items-center justify-center space-y-6 border-r-4 border-lightSand"
+          className="flex h-full w-1/2 flex-col items-center justify-center space-y-6 border-r-2 border-whiteIce"
         >
           <div className="m-2 flex w-3/4 flex-col items-center justify-center space-y-8 border border-lightSand p-6 shadow-md">
             <h1 className="font-prata text-2xl uppercase text-whiteIce md:text-3xl lg:text-4xl">
@@ -118,6 +120,10 @@ export default function HeroSection() {
         <div className="flex h-full w-1/2 flex-col items-center justify-center ">
           <CarouselSolutions />
         </div>
+      </section>
+      <section className="flex h-2/4 w-full items-center bg-whiteSnow">
+        {/* Remover flex e items-center se necessario depois de implementar o carousel */}
+        <BlogCard />
       </section>
     </>
   )
