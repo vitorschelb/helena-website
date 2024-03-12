@@ -24,11 +24,11 @@ export default function Header() {
     { label: 'Sobre', href: '/' },
     { label: 'Patrimônio', href: '/' },
     { label: 'Artigos', href: '/' },
-    { label: 'Contato', href: '/' },
+    { label: 'Contato', href: '/Contato' },
   ]
 
   return (
-    <nav className=" left-0 top-0 h-20 w-full border-b-1 border-l-3 border-r-3 border-t-8 border-darkSand bg-whiteIce">
+    <nav className=" border-b-1 border-l-3 border-r-3 left-0 top-0 h-20 w-full border-t-8 border-darkSand bg-whiteIce">
       {/* Desktop */}
 
       <div className="flex h-full w-full items-center justify-between px-4 2xl:px-16">

@@ -25,10 +25,11 @@ const config = {
       },
       colors: {
         whiteIce: '#F8F8F8',
-        darkSand: '#AE9984',
+        whiteSnow: '#ECE8E7',
         lightSand: '#DFD8D0',
-        darkBlack: '#2E2D32',
+        darkSand: '#AE9984',
         lightBlack: '#57565B',
+        darkBlack: '#2E2D32',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
