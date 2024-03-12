@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import HeroOne from '@/public/HeroOne.png'
 import HeroTwo from '@/public/HeroTwo.jpg'
-import Solutions from '@/public/Solutions.jpg'
 import { motion } from 'framer-motion'
 import {
   animateAxisXLeftFast,
@@ -12,6 +11,7 @@ import {
   animateAxisXRightSlow,
   animateAxisYSlow,
 } from '../utils/animations'
+import { CarouselSolutions } from '@/components/SolutionsCarousel'
 
 export default function HeroSection() {
   return (
@@ -32,7 +32,7 @@ export default function HeroSection() {
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              className="absolute bottom-10 left-0 flex border-b-1 border-r-1 border-t-1 border-darkSand shadow-md"
+              className="border-b-1 border-r-1 border-t-1 absolute bottom-10 left-0 flex border-darkSand shadow-md"
             >
               <Image
                 src={HeroOne}
@@ -51,14 +51,14 @@ export default function HeroSection() {
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              className="absolute bottom-10 right-0 flex h-1/2 w-1/5 bg-lightSand shadow-md"
+              className="absolute bottom-10  right-0 flex h-1/2 w-1/5 bg-lightSand shadow-md"
             />
             <motion.div
               variants={animateAxisXRightSlow}
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              className="absolute bottom-24 right-0 flex border-b-1 border-l-1 border-t-1 border-darkSand shadow-md"
+              className="border-b-1 border-l-1 border-t-1 absolute bottom-24 right-0 flex border-darkSand shadow-md"
             >
               <Image
                 src={HeroTwo}
@@ -83,22 +83,22 @@ export default function HeroSection() {
             <h1 className="font-italianno text-4xl text-darkBlack md:text-6xl lg:text-8xl">
               Helena Amaral Sant Ana
             </h1>
-            <button className="bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border-1 hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            <button className="bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
               Consultoria Histórica
             </button>
           </motion.div>
         </div>
       </section>
 
-      <section className="flex h-1/2 bg-darkSand">
+      <section className="relative flex h-1/2 bg-darkSand">
         <motion.div
           variants={animateAxisYSlow}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="flex h-full w-1/2 flex-col items-center justify-center space-y-6  "
+          className="flex h-full w-1/2 flex-col items-center justify-center space-y-6 border-r-4 border-lightSand"
         >
-          <div className="m-2 flex w-3/4 flex-col items-center justify-center  space-y-8 border-1 border-lightSand p-6 shadow-md">
+          <div className="m-2 flex w-3/4 flex-col items-center justify-center space-y-8 border border-lightSand p-6 shadow-md">
             <h1 className="font-prata text-2xl uppercase text-whiteIce md:text-3xl lg:text-4xl">
               Soluções
             </h1>
@@ -110,19 +110,13 @@ export default function HeroSection() {
               palestras, workshops e materiais educativos para atender às suas
               necessidades.
             </h2>
-            <button className="border-1 border-whiteIce bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border-1 hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            <button className="border border-whiteIce bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
               Detalhes
             </button>
           </div>
         </motion.div>
-        <div className="relative w-1/2 items-center justify-center">
-          <Image
-            src={Solutions}
-            alt="Logo Helena Amaral"
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="flex h-full w-1/2 flex-col items-center justify-center ">
+          <CarouselSolutions />
         </div>
       </section>
     </>
