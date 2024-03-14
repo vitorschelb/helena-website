@@ -40,7 +40,7 @@ export default function RootLayout({
         className={` ${italianno.variable} ${prata.variable} ${dosis.variable}`}
       >
         <Header />
-        <main className=" border-b-3 border-l-3 border-r-3 h-svh flex-col items-center border-darkSand">
+        <main className="h-svh flex-col items-center border-b-2 border-l-2 border-r-2 border-darkSand">
           {children}
         </main>
       </body>

@@ -13,7 +13,6 @@ import {
 } from '../utils/animations'
 import { CarouselSolutions } from '@/components/SolutionsCarousel'
 import BlogCard from '@/components/BlogCard'
-import { BlogCarousel } from '@/components/BlogCarousel'
 
 export default function HeroSection() {
   return (
@@ -122,9 +121,9 @@ export default function HeroSection() {
         </div>
       </section>
       <section className="flex h-2/4 w-full items-center bg-whiteSnow">
-        {/* Remover flex e items-center se necessario depois de implementar o carousel */}
         <BlogCard />
       </section>
+      <section></section>
     </>
   )
 }

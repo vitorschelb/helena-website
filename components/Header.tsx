@@ -28,7 +28,7 @@ export default function Header() {
   ]
 
   return (
-    <nav className=" border-b-1 border-l-3 border-r-3 left-0 top-0 h-20 w-full border-t-8 border-darkSand bg-whiteIce">
+    <nav className="left-0 top-0 h-20 w-full border-b border-l-2 border-r-2 border-t-8 border-darkSand bg-whiteIce">
       {/* Desktop */}
 
       <div className="flex h-full w-full items-center justify-between px-4 2xl:px-16">
