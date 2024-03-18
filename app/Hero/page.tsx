@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import HeroOne from '@/public/HeroOne.png'
 import HeroTwo from '@/public/HeroTwo.jpg'
+import FotoHelena from '@/public/FotoHelena.jpeg'
 import { motion } from 'framer-motion'
 import {
   animateAxisXLeftFast,
@@ -84,7 +85,7 @@ export default function HeroSection() {
             <h1 className="font-italianno text-4xl text-darkBlack md:text-6xl lg:text-8xl">
               Helena Amaral Sant Ana
             </h1>
-            <button className="bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            <button className=" bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
               Consultoria Histórica
             </button>
           </motion.div>
@@ -97,13 +98,13 @@ export default function HeroSection() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="flex h-full w-1/2 flex-col items-center justify-center space-y-6 border-r-2 border-whiteIce"
+          className="flex h-full w-1/2 items-center justify-center space-y-6 border-r-2 border-whiteIce"
         >
           <div className="m-2 flex w-3/4 flex-col items-center justify-center space-y-8 border border-lightSand p-6 shadow-md">
-            <h1 className="font-prata text-2xl uppercase text-whiteIce md:text-3xl lg:text-4xl">
+            <h1 className="font-prata text-2xl uppercase text-whiteIce ">
               Soluções
             </h1>
-            <h2 className="text-justify font-dosis text-xl text-whiteIce">
+            <h2 className="text-justify font-dosis text-lg text-whiteIce">
               Oferecemos soluções completas de consultoria histórica, abrangendo
               o levantamento e análise de documentos e artefatos, inventários,
               assessoria para a realização do ICMS Patrimônio Cultural, apoio em
@@ -111,7 +112,7 @@ export default function HeroSection() {
               palestras, workshops e materiais educativos para atender às suas
               necessidades.
             </h2>
-            <button className="border border-whiteIce bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            <button className="w-28 border border-whiteIce bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
               Detalhes
             </button>
           </div>
@@ -120,10 +121,41 @@ export default function HeroSection() {
           <CarouselSolutions />
         </div>
       </section>
-      <section className="flex h-2/4 w-full items-center bg-whiteSnow">
+      <section className="flex h-2/4 items-center bg-whiteSnow">
         <BlogCard />
       </section>
-      <section></section>
+      <section className="relative flex h-1/2 items-center justify-center bg-whiteIce">
+        <span className="absolute bottom-5 left-96 z-0 flex h-4/5 w-[300px] bg-lightSand shadow-md" />
+        <div className="z-10 flex h-4/5 justify-center shadow-md">
+          <Image
+            src={FotoHelena}
+            alt="Mulher de oculos lendo documentos antigos"
+            width={350}
+            sizes="100vw"
+            className="object-cover shadow-md"
+            priority
+          />
+        </div>
+        <div className="flex w-1/3  flex-col space-y-6 px-10">
+          <h2 className="font-dosis text-sm uppercase tracking-wider text-darkSand">
+            Conheça mais
+          </h2>
+          <h1 className="text-start font-prata text-2xl text-darkBlack">
+            Sobre Helena...
+          </h1>
+          <p className="text-start font-dosis text-lightBlack">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            officia, amet earum minus assumenda tenetur, eveniet eaque quos
+            exercitationem quia sunt! Facere itaque omnis aperiam eligendi
+            accusamus adipisci, sunt labore? Facere itaque omnis aperiam
+            eligendi accusamus adipisci, sunt labore?
+          </p>
+          <button className="w-28 bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            Saiba Mais
+          </button>
+        </div>
+      </section>
+      <section className=" flex h-1/2 items-center justify-center bg-darkSand"></section>
     </>
   )
 }
