@@ -12,7 +12,7 @@ export default function BlogCard() {
           incidunt nisi, facere placeat adipisci, minus aliquam. Deleniti
           eligendi pariatur cumque maxime.
         </p>
-        <button className="w-28 bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+        <button className="w-28 border border-transparent bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
           Ler Mais
         </button>
       </div>

@@ -82,10 +82,10 @@ export default function HeroSection() {
             <h2 className="font-dosis text-xs uppercase text-darkSand md:text-sm lg:text-base">
               Conectando o Presente ao Passado
             </h2>
-            <h1 className="font-italianno text-4xl text-darkBlack md:text-6xl lg:text-8xl">
+            <h1 className="font-italianno text-4xl text-lightBlack md:text-6xl lg:text-8xl">
               Helena Amaral Sant Ana
             </h1>
-            <button className="lg:text-basis bg-darkSand p-3 font-dosis text-sm uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            <button className="lg:text-basis border border-transparent bg-darkSand p-3 font-dosis text-sm uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
               Consultoria Histórica
             </button>
           </motion.div>
@@ -112,7 +112,7 @@ export default function HeroSection() {
               palestras, workshops e materiais educativos para atender às suas
               necessidades.
             </h2>
-            <button className="w-28 border border-whiteIce bg-darkSand p-3 font-dosis text-sm uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg md:text-base">
+            <button className="w-28 border  border-whiteIce bg-darkSand p-3 font-dosis text-sm uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg md:text-base">
               Detalhes
             </button>
           </div>
@@ -150,7 +150,7 @@ export default function HeroSection() {
             accusamus adipisci, sunt labore? Facere itaque omnis aperiam
             eligendi accusamus adipisci, sunt labore?
           </p>
-          <button className=" w-28 bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+          <button className="w-28 border border-transparent bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
             Saiba Mais
           </button>
         </div>
