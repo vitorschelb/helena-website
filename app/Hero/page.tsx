@@ -124,7 +124,7 @@ export default function HeroSection() {
       <section className="hidden h-2/4 items-center bg-whiteSnow lg:flex">
         <BlogCard />
       </section>
-      <section className="relative items-center justify-center space-y-4 bg-whiteIce py-4 lg:flex lg:h-1/2  lg:space-y-0 lg:py-0">
+      <section className="relative items-center justify-center space-y-4 bg-whiteIce py-4 md:flex md:h-1/3  md:space-y-0 md:px-6 md:py-0 lg:h-1/2 lg:px-0">
         <span className="absolute z-0 hidden bg-lightSand shadow-md lg:bottom-5 lg:left-96 lg:flex lg:h-4/5 lg:w-[300px]" />
         <div className="z-10 m-auto flex h-[250px] w-[250px] justify-center rounded-sm border-b-4 border-r-4 border-darkSand shadow-md lg:m-0 lg:h-4/5 lg:w-[350px] lg:border-0">
           <Image
@@ -140,7 +140,7 @@ export default function HeroSection() {
           <h2 className="font-dosis text-sm uppercase tracking-wider text-darkSand">
             Conheça mais
           </h2>
-          <h1 className="font-prata text-xl text-darkBlack lg:text-2xl">
+          <h1 className="font-prata text-xl text-lightBlack lg:text-2xl">
             Sobre Helena...
           </h1>
           <p className="font-dosis text-lightBlack">
