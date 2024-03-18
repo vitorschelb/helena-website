@@ -124,9 +124,9 @@ export default function HeroSection() {
       <section className="hidden h-2/4 items-center bg-whiteSnow lg:flex">
         <BlogCard />
       </section>
-      <section className="relative hidden h-1/2 items-center justify-center bg-whiteIce md:flex">
-        <span className="absolute bottom-5 left-96 z-0 flex h-4/5 w-[300px] bg-lightSand shadow-md" />
-        <div className="z-10 flex h-4/5 justify-center shadow-md">
+      <section className="relative items-center justify-center space-y-4 bg-whiteIce py-4 lg:flex lg:h-1/2  lg:space-y-0 lg:py-0">
+        <span className="absolute z-0 hidden bg-lightSand shadow-md lg:bottom-5 lg:left-96 lg:flex lg:h-4/5 lg:w-[300px]" />
+        <div className="z-10 m-auto flex h-[250px] w-[250px] justify-center rounded-sm border-b-4 border-r-4 border-darkSand shadow-md lg:m-0 lg:h-4/5 lg:w-[350px] lg:border-0">
           <Image
             src={FotoHelena}
             alt="Mulher de oculos lendo documentos antigos"
@@ -136,21 +136,21 @@ export default function HeroSection() {
             priority
           />
         </div>
-        <div className="flex w-1/3  flex-col space-y-6 px-10">
+        <div className="flex w-full flex-col items-center space-y-4 px-10 text-justify lg:w-1/3 lg:items-start lg:space-y-6 lg:text-start">
           <h2 className="font-dosis text-sm uppercase tracking-wider text-darkSand">
             Conheça mais
           </h2>
-          <h1 className="text-start font-prata text-2xl text-darkBlack">
+          <h1 className="font-prata text-xl text-darkBlack lg:text-2xl">
             Sobre Helena...
           </h1>
-          <p className="text-start font-dosis text-lightBlack">
+          <p className="font-dosis text-lightBlack">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             officia, amet earum minus assumenda tenetur, eveniet eaque quos
             exercitationem quia sunt! Facere itaque omnis aperiam eligendi
             accusamus adipisci, sunt labore? Facere itaque omnis aperiam
             eligendi accusamus adipisci, sunt labore?
           </p>
-          <button className="w-28 bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+          <button className=" w-28 bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
             Saiba Mais
           </button>
         </div>
