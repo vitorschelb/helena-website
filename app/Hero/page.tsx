@@ -20,7 +20,7 @@ export default function HeroSection() {
     <>
       <section className="h-2/4 bg-whiteIce">
         <div className="relative h-full w-full">
-          <div className="hidden sm:hidden md:hidden lg:flex">
+          <div className="hidden lg:flex">
             <motion.div
               variants={animateAxisXLeftFast}
               initial="initial"
@@ -47,7 +47,7 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          <div className="hidden sm:hidden md:hidden lg:flex">
+          <div className="hidden lg:flex">
             <motion.div
               variants={animateAxisXRightFast}
               initial="initial"
@@ -85,26 +85,26 @@ export default function HeroSection() {
             <h1 className="font-italianno text-4xl text-darkBlack md:text-6xl lg:text-8xl">
               Helena Amaral Sant Ana
             </h1>
-            <button className=" bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            <button className="lg:text-basis bg-darkSand p-3 font-dosis text-sm uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
               Consultoria Histórica
             </button>
           </motion.div>
         </div>
       </section>
 
-      <section className="relative flex h-1/2 bg-darkSand">
+      <section className="relative flex bg-darkSand lg:h-1/2">
         <motion.div
           variants={animateAxisYSlow}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="flex h-full w-1/2 items-center justify-center space-y-6 border-r-2 border-whiteIce"
+          className="flex h-full w-full items-center justify-center space-y-6 lg:w-1/2 lg:border-r-2 lg:border-whiteIce"
         >
-          <div className="m-2 flex w-3/4 flex-col items-center justify-center space-y-8 border border-lightSand p-6 shadow-md">
-            <h1 className="font-prata text-2xl uppercase text-whiteIce ">
+          <div className="m-2 flex flex-col items-center justify-center space-y-6 border border-lightSand p-6 shadow-md lg:w-3/4 lg:space-y-8">
+            <h1 className="font-prata text-xl uppercase text-whiteIce md:text-2xl">
               Soluções
             </h1>
-            <h2 className="text-justify font-dosis text-lg text-whiteIce">
+            <h2 className="text-justify font-dosis text-whiteIce md:text-lg">
               Oferecemos soluções completas de consultoria histórica, abrangendo
               o levantamento e análise de documentos e artefatos, inventários,
               assessoria para a realização do ICMS Patrimônio Cultural, apoio em
@@ -112,19 +112,19 @@ export default function HeroSection() {
               palestras, workshops e materiais educativos para atender às suas
               necessidades.
             </h2>
-            <button className="w-28 border border-whiteIce bg-darkSand p-3 font-dosis uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg">
+            <button className="w-28 border border-whiteIce bg-darkSand p-3 font-dosis text-sm uppercase text-whiteIce shadow-md duration-500 ease-in-out hover:border hover:border-darkSand hover:bg-whiteIce hover:text-darkSand hover:shadow-lg md:text-base">
               Detalhes
             </button>
           </div>
         </motion.div>
-        <div className="flex h-full w-1/2 flex-col items-center justify-center ">
+        <div className="hidden h-full w-1/2 flex-col items-center justify-center lg:flex">
           <CarouselSolutions />
         </div>
       </section>
-      <section className="flex h-2/4 items-center bg-whiteSnow">
+      <section className="hidden h-2/4 items-center bg-whiteSnow lg:flex">
         <BlogCard />
       </section>
-      <section className="relative flex h-1/2 items-center justify-center bg-whiteIce">
+      <section className="relative hidden h-1/2 items-center justify-center bg-whiteIce md:flex">
         <span className="absolute bottom-5 left-96 z-0 flex h-4/5 w-[300px] bg-lightSand shadow-md" />
         <div className="z-10 flex h-4/5 justify-center shadow-md">
           <Image
@@ -155,7 +155,7 @@ export default function HeroSection() {
           </button>
         </div>
       </section>
-      <section className=" flex h-1/2 items-center justify-center bg-darkSand"></section>
+      <section className=" hidden h-1/2 items-center justify-center bg-darkSand md:flex"></section>
     </>
   )
 }
