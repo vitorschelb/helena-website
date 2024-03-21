@@ -1,7 +1,7 @@
 'use client'
 
-import { CarouselSolutions } from '@/components/SolutionsCarousel'
+import ContactForm from '@/components/ContactForm'
 
 export default function Contact() {
-  return <CarouselSolutions />
+  return <ContactForm />
 }
