@@ -14,6 +14,7 @@ import {
 } from '../utils/animations'
 import { CarouselSolutions } from '@/components/SolutionsCarousel'
 import BlogCard from '@/components/BlogCard'
+import ContactForm from '@/components/ContactForm'
 
 export default function HeroSection() {
   return (
@@ -155,7 +156,23 @@ export default function HeroSection() {
           </button>
         </div>
       </section>
-      <section className=" hidden h-1/2 items-center justify-center bg-darkSand md:flex"></section>
+      <section className="hidden h-1/2 items-center justify-center bg-darkSand md:flex">
+        <div className="flex h-full w-1/3 flex-col space-y-4 p-16">
+          <h2 className="font-dosis text-sm uppercase tracking-wider text-whiteIce">
+            Quer saber mais?
+          </h2>
+          <h1 className="font-prata text-xl text-whiteSnow lg:text-2xl">
+            Entre em Contato
+          </h1>
+          <p className="font-dosis text-whiteIce">
+            Terei prazer em responder suas perguntas e ajudá-lo da melhor
+            maneira possível.
+          </p>
+        </div>
+        <div className="flex w-1/3 items-center bg-whiteSnow p-4">
+          <ContactForm />
+        </div>
+      </section>
     </>
   )
 }
